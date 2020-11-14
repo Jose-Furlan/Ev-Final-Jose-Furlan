@@ -1,7 +1,36 @@
+h1 {
+    font-weight: 600;
+}
+
 .land {
     fill: #CCCCCC;
     fill-opacity: 1;
     stroke: white;
     stroke-opacity: 1;
     stroke-width: 0.1;
+}
+
+.land:hover {
+    fill: black;
+    transform: scale(1.01);
+}
+
+.land,
+.land * {
+    transition: all 0.45s ease-out;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+#btnAgregar,
+#btnAgrega:hover {
+    transition: all 0.45s ease-out;
+}
+
+#btnAgregar:hover {
+    fill: #a71f0d;
+    transform: scale(1.2);
 }

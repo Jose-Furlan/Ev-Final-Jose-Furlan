@@ -40,7 +40,7 @@ namespace Datos
         {
             DT.Clear();
 
-            SqlCommand Comando = Conexion.CrearComandoProc("Sistema.SPObtenerDatosPais");
+            SqlCommand Comando = Conexion.CrearComandoProc("Sistema.SPObtenerDatosPaises");
             Comando.Parameters.AddWithValue("@_IdRegistro", Entidad.IdPais);
 
             return Conexion.EjecutarComandoSelect(Comando);
