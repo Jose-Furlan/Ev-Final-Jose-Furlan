@@ -2,6 +2,10 @@ h1 {
     font-weight: 600;
 }
 
+h2 {
+    color: #a71f0d;
+}
+
 .land {
     fill: #CCCCCC;
     fill-opacity: 1;
