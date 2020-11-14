@@ -9,9 +9,9 @@ namespace ApiRest
     {
         [HttpPost]
         [Route("api/ObtenerContinentes")]
-        public DataTable AgregarEmpleado(EntidadContinentes entidad)
+        public DataTable AgregarEmpleado()
         {
-            return DatosContinentes.ObtenerContinentes(entidad);
+            return DatosContinentes.ObtenerContinentes();
         }
     }
 }

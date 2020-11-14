@@ -257,6 +257,7 @@ AS
 BEGIN
 	SELECT	a.IdPais,
 			a.TxtPais,
+			a.IdContinente,
 			b.TxtContinente,
 			a.TxtCapital,
 			a.IntAnioIndependencia,

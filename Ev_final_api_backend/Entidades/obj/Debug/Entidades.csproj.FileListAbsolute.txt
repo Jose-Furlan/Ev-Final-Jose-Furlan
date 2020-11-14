@@ -1,0 +1,6 @@
+C:\Users\Furlan\Documents\GitHub\Ev-Final-Jose-Furlan\Ev_final_api_backend\Entidades\bin\Debug\Entidades.dll
+C:\Users\Furlan\Documents\GitHub\Ev-Final-Jose-Furlan\Ev_final_api_backend\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Furlan\Documents\GitHub\Ev-Final-Jose-Furlan\Ev_final_api_backend\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Furlan\Documents\GitHub\Ev-Final-Jose-Furlan\Ev_final_api_backend\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Furlan\Documents\GitHub\Ev-Final-Jose-Furlan\Ev_final_api_backend\Entidades\obj\Debug\Entidades.dll
+C:\Users\Furlan\Documents\GitHub\Ev-Final-Jose-Furlan\Ev_final_api_backend\Entidades\obj\Debug\Entidades.pdb

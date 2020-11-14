@@ -18,7 +18,7 @@ namespace Datos
             return Conexion.EjecutarComandoSelect(Comando);
         }
 
-        public static DataTable ObtenerContinentes(EntidadContinentes Entidad)
+        public static DataTable ObtenerContinentes()
         {
             SqlCommand Comando = Conexion.CrearComandoProc("Sistema.SPObtenerContinentes");
 
