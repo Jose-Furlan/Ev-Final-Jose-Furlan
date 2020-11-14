@@ -15,29 +15,29 @@ namespace ApiRest
         }
 
         [HttpPost]
-        [Route("api/ObtenerEmpleados")]
-        public DataTable ObtenerEmpleados(EntidadPaises Entidad)
+        [Route("api/ObtenerPaises")]
+        public DataTable ObtenerPaises(EntidadPaises Entidad)
         {
             return DatosPaises.ObtenerPaises(Entidad);
         }
 
         [HttpPost]
-        [Route("api/ObtenerDatosEmpleado")]
-        public DataTable ObtenerDatosEmpleado(EntidadPaises entidad)
+        [Route("api/ObtenerDatosPais")]
+        public DataTable ObtenerDatosPais(EntidadPaises entidad)
         {
             return DatosPaises.ObtenerDatosPais(entidad);
         }
 
         [HttpPost]
-        [Route("api/EliminarEmpleado")]
-        public DataTable EliminarEmpleado(EntidadPaises entidad)
+        [Route("api/EliminarPais")]
+        public DataTable EliminarPais(EntidadPaises entidad)
         {
             return DatosPaises.EliminarPais(entidad);
         }
 
         [HttpPost]
-        [Route("api/ActualizarEmpleado")]
-        public DataTable ActualizarEmpleado(EntidadPaises entidad)
+        [Route("api/ActualizarPais")]
+        public DataTable ActualizarPais(EntidadPaises entidad)
         {
             return DatosPaises.ActualizarPais(entidad);
         }

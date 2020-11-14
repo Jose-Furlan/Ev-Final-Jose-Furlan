@@ -31,6 +31,7 @@ namespace Datos
             DT.Clear();
 
             SqlCommand Comando = Conexion.CrearComandoProc("Sistema.SPObtenerPaises");
+            Comando.Parameters.AddWithValue("@_IdContinente", Entidad.IdContinente);
 
             return Conexion.EjecutarComandoSelect(Comando);
         }
