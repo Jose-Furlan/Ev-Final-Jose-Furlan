@@ -61,6 +61,7 @@ function VerificarCampos() {
 function ObtenerPaises(IdContinente, TxtContinente) {
 
     document.getElementById("TxtContinente").innerText = TxtContinente;
+    sessionStorage.setItem('TxtContinenteEnPantalla', TxtContinente);
     $(".DatosPaises td").remove();
 
     var settings = {
@@ -95,6 +96,7 @@ function ObtenerPaises(IdContinente, TxtContinente) {
 
             $(fila).appendTo(".DatosPaises");
             sessionStorage.setItem('ContinenteEnPantalla', IdContinente);
+
         });
 
     });
@@ -129,7 +131,7 @@ function AgregarPais() {
             $.each(response, function(index, data) {
                 if (data.Resultado > 0) {
                     Swal.fire('Perfecto!', 'El pais se agregó correctamente!', 'success');
-                    ObtenerPaises(sessionStorage.getItem('ContinenteEnPantalla'));
+                    ObtenerPaises(sessionStorage.getItem('ContinenteEnPantalla'), sessionStorage.getItem('TxtContinenteEnPantalla'));
                     LimpiarFormulario();
                     $('#AgregarPaisModal').modal('hide');
                 } else {
@@ -160,7 +162,7 @@ function EliminarPais(IdPais) {
 
                 Swal.fire('Perfecto!', 'El pais se eliminó correctamente!', 'success');
                 LimpiarFormulario();
-                ObtenerPaises(sessionStorage.getItem('ContinenteEnPantalla'));
+                ObtenerPaises(sessionStorage.getItem('ContinenteEnPantalla'), sessionStorage.getItem('TxtContinenteEnPantalla'));
 
             } else {
                 Swal.fire({ icon: 'error', title: 'Oops...', text: 'No se pudo eliminar el pais!' });
@@ -234,7 +236,7 @@ function ActualizarPais() {
                     Swal.fire('Perfecto!', 'El pais se actualizó correctamente!', 'success');
                     $('#AgregarPaisModal').modal('hide');
                     LimpiarFormulario();
-                    ObtenerPaises(sessionStorage.getItem('ContinenteEnPantalla'));
+                    ObtenerPaises(sessionStorage.getItem('ContinenteEnPantalla'), sessionStorage.getItem('TxtContinenteEnPantalla'));
                 } else {
                     Swal.fire({ icon: 'error', title: 'Oops...', text: 'No se pudo actualizar el pais!' });
                 }
